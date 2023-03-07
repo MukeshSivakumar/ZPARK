@@ -11,6 +11,7 @@
     --lightblue : #ECF2FF;
     --darkblue : #3E54AC;
     --navy : #18122B;
+    --light_grey : rgba(255,255,255,0.5);
 }
 
 * {
@@ -438,6 +439,7 @@ margin : 0 3px;
    width:100%;
    margin-top : 600px;
    /* height : 100vh; */
+   background: var(--grey_bg);
 }
 
 .contact-container {
@@ -453,16 +455,48 @@ margin : 0 3px;
    height : 100%;
    display : flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content:space-between;
    /* align-items: center; */
+   margin-top: 100px;
 }
 
 .contact-left {
-   flex : 2.5;
+   flex : 4;
 }
 
+.contact-content {
+   color : rgba(255,255,255,0.5);
+   font-size: 25px;
+}
+
+.contact-btn {
+   text-decoration: none;
+   margin: 40px 0px;
+   border : 2px solid var(--light_grey);
+   /* color : var(--pink);
+   background-color: var(--black); */
+   color : var(--grey_bg);
+   background-color: var(--light_grey);
+   width : fit-content;
+   height : 60px;
+   padding : 10px 30px;
+   border-radius: 30px;
+   font-size : 25px;
+   font-weight: bold;
+   cursor: pointer;
+   transform: 0.5s;
+}
+
+.contact-btn:hover {
+   background-color: var(--grey_bg);
+   color: var(--white);
+}
 .contact-right {
-   flex : 4;
+   flex : 2;
+   background-image: url(IMAGES/contactpage2.jpg);
+   background-size: cover;
+   border-radius: 20px;
+   /* width : 500px; */
 }
 
 .contact-left p {
@@ -489,7 +523,7 @@ margin : 0 3px;
 }
 
 .contact-social-icons a:hover {
-   color : var(--pink);
+   color : var(--white);
    transform : translateY(-5px);
 }
 
