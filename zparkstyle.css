@@ -7,6 +7,10 @@
     --white : #fff;
     --pinktext : rgba(255, 0, 79,0.6);
     --grey_bg : #262626;
+    --chocolate : #c6a58f;
+    --lightblue : #ECF2FF;
+    --darkblue : #3E54AC;
+    --navy : #18122B;
 }
 
 * {
@@ -17,9 +21,8 @@
 }
 
 body {
-   background-color: var(--black);
+   background-color: var(--white);
    font-family: sans-serif ;
-   color : var(--white);
 }
 
 .restrict-view {
@@ -39,7 +42,7 @@ body {
    height : 100%;
 }
 nav {
-   margin : 0px 140px 0px 140px;
+   margin : 0px 70px 0px 140px;
    padding-top: 20px;
    display : flex;
    flex-wrap: wrap;
@@ -50,6 +53,11 @@ nav {
 nav ul {
    display : flex;
    list-style: none;
+}
+
+nav h1 {
+    font-size: 3.5rem;
+    color : var(--grey_bg);
 }
 
 nav .menu-icon,.close-icon {
@@ -68,6 +76,7 @@ nav ul li a{
    font-size : 1rem;
    font-weight: bold;
    position: relative;
+   color : var(--grey_bg);
 }
 
 nav ul li a::after {
@@ -89,7 +98,8 @@ nav ul li a:hover::after {
 }
 
 .textColor {
-   color:var(--pink);
+   color:var(--black);
+   font-size: 2.5rem;
 }
 
 .main {
@@ -98,28 +108,37 @@ nav ul li a:hover::after {
    display : flex;
    justify-content: space-between;
    align-items: flex-start;
+   color : var(--grey_bg);
 }
 
 .main-content {
-   margin : 150px 0px 0px 140px ;
-   line-height: 4rem;
+   margin : 200px 0px 0px 140px ;
+   line-height: 2rem;
+}
+
+.home-content {
+    /* color : rgba(255,255,255,0.5); */
+    /* color : #BFACE2; */
+    font-size: 1.5rem;
+
 }
 
 .main-img {
-   background-image: url(IMAGES/new_Image.png);
-   background-size: 230px;
-   background-position: top;
+   background-image: url(IMAGES/homepage7.jpg);
+   background-size:670px;
+   background-position: center;
+   /* background-repeat: no-repeat; */
    /* background-color: rgb(44, 43, 43); */
-   background-color: var(--grey_bg);
+   /* background-color: var(--grey_bg); */
    background-repeat: space;
-   width : 350px;
-   min-width : 350px;
-   height : 350px;
+   width : 400px;
+   min-width : 450px;
+   height : 450px;
    border : 5px solid #fff;
    border-radius : 50%;
    /* margin-right: 190px;
    margin-top : 130px ; */
-   margin : 100px 230px 0px 0px;
+   margin : 100px 100px 0px 0px;
 }  
 
 /* -------------------------------------About------------------------------------------- */
@@ -129,7 +148,7 @@ nav ul li a:hover::after {
    width : 100%;
    margin-top : 50px;
    height : 100vh;
-   /* background: blueviolet; */
+   background: var(--grey_bg);
 }
 
 .about-container {
@@ -151,9 +170,9 @@ nav ul li a:hover::after {
 
 .about-col-1 {
    flex : 2;
-   background: url(IMAGES/new_Image.png);
-   background-size: 300px;
-   background-position: bottom;
+   background: url(IMAGES/homepage3.jpg);
+   background-size: 420px;
+   background-position: center;
    /* background-color: rgba(147, 144, 144, 0.2); */
    background-color: var(--grey_bg);
    background-repeat:no-repeat;
@@ -163,14 +182,14 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 {
-   flex : 3;
+   flex : 4;
    margin-left: 40px;
    height : 500px;
    color : rgba(255,255,255,0.5);
 }
 
 .sub-heading {
-     font-size: 3.5rem;
+     font-size: 3rem;
      color: var(--white);
      margin-bottom : 20px;
 }
@@ -249,8 +268,8 @@ margin : 0 3px;
 }
 
 
-/* ------------------------------------------SKILLSETS------------------------------------- */
-#skillset {
+/* ------------------------------------------SERVICES------------------------------------- */
+#services {
    width : 100%;
    height : 100vh;
    display : flex;
@@ -258,35 +277,46 @@ margin : 0 3px;
    align-items : center;
 }
 
-.skillset-container {
+.services-container {
    width : 80%;
    height : 80%;
 }
 
-.skillset-list {
+.services-sub-heading {
+   font-size: 3rem;
+   color : var(--grey_bg);
+}
+
+.services-list {
    margin-top: 75px;
    display : grid;
    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
    grid-gap: 30px;
 }
 
-.skillset-list div {
+.services-list div {
    background-color: var(--grey_bg);
+   color : var(--white);
    padding : 40px;
-   font-size: 13px;
+   font-size: 20px;
    font-weight: 300;
    border-radius: 10px;
    transition: 0.5s background-color , 0.5s transform;
 }
 
-.skillset-list div i {
+.services-list div i {
    font-size: 60px;
    margin-bottom : 40px;
 }
 
-.skillset-list div h2 {
+.services-list div #social-media {
+   font-size: 40px;
+   margin-bottom: 60px;
+}
+
+.services-list div h2 {
    font-size: 30px;
-   font-weight : 500;
+   font-weight : 600;
    margin-bottom: 15px;
 }
 #mob {
@@ -297,11 +327,11 @@ margin : 0 3px;
    background-color: var(--grey_bg);
 }
 
-.skillset-list div p{
+.services-list div p{
    color :rgba(255,255,255,0.5);
 }
 
-.skillset-list div a{
+.services-list div a{
    text-decoration: none;
    color : var(--white);
    font-size: 12px;
@@ -309,8 +339,9 @@ margin : 0 3px;
    display : inline-block;
 }
 
-.skillset-list div:hover {
-   background-color: var(--pink);
+.services-list div:hover {
+   background-color: var(--darkblue);
+   color : var(--grey_bg);
    transform: translateY(-10px);
 }
 
@@ -405,7 +436,7 @@ margin : 0 3px;
 #contact
 {
    width:100%;
-   margin-top : 120px;
+   margin-top : 600px;
    /* height : 100vh; */
 }
 
@@ -464,29 +495,29 @@ margin : 0 3px;
 
 .btn {
    text-decoration: none;
-   margin: 40px 0;
-   border : 2px solid var(--pink);
+   margin: 40px 0px;
+   border : 2px solid var(--grey_bg);
    /* color : var(--pink);
    background-color: var(--black); */
-   color : var(--black);
-   background-color: var(--pink);
+   color : var(--white);
+   background-color: var(--grey_bg);
    width : fit-content;
-   height : 50px;
+   height : 60px;
    padding : 10px 30px;
-   border-radius: 10px;
-   font-size : 15px;
+   border-radius: 30px;
+   font-size : 25px;
    font-weight: bold;
    cursor: pointer;
    transform: 0.5s;
 }
 
 .btn:hover {
-   /* background-color: #ff004f;
-   color : var(--black); */
+   background-color: var(--white);
+   color : var(--grey_bg);
    /* background-color: var(--white); */
    /* color : var(--black); */
    /* transform: translateY(-5px); */
-
+   transform : 1s;
 }
 
 .contact-right {

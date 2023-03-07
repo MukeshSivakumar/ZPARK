@@ -26,7 +26,7 @@ function changebg(event,mobileEle){
     let mob = document.getElementById(mobileEle);
     if(event == "over")
     {
-        mob.style.backgroundColor = "#ff004f";
+        mob.style.backgroundColor = "#3E54AC";
         mob.style.transitionDuration = "0.5s";
     }else {
         mob.style.backgroundColor = "#262626";
