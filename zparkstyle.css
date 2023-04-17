@@ -115,10 +115,10 @@ nav ul li a:hover::after {
 .textColor {
    /* color: linear-gradient(to right,#c31432,#240b36); */
    color : whitesmoke;
-   font-size: 2.5rem;
-   /* background: -webkit-linear-gradient(#FFAACF,#EA8FEA);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent; */
+   font-size: 3.5rem;
+   background: -webkit-linear-gradient(left,#DDBEBE,#EA8FEA,#F9E2AF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 }
 
 .main {
@@ -714,14 +714,15 @@ form .btn {
    .main-content {
        flex : 1;
        margin :100px 0 0 0;
-       padding : 15px;
+       padding : 20px;
+       
    }
    .main-content h1 {
-       font-size: 1.5rem;
+       font-size: 2.5rem;
        /* background: -webkit-linear-gradient(var(--lightblue),var(--lightpink),var(--darkpurple));
        -webkit-background-clip: text;
        -webkit-text-fill-color: transparent; */
-       line-height: 1em;
+       line-height: 3.5rem;
    }
    .main-content .home-content{
        font-size: 1rem;
@@ -732,8 +733,12 @@ form .btn {
 
    }
    .textColor {
-       padding-left: 0;
-       font-size : 2.2rem;
+       font-size: 3.5rem;
+       /* position : relative;
+       top : 10px; */
+      /* background: -webkit-linear-gradient(left,#DDBEBE,#EA8FEA,#F9E2AF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; */
    }
 
    .btn {
@@ -846,6 +851,10 @@ form .btn {
   }
   /* ---------------------SERVICES------------------- */
 
+  .services-container {
+   width: 100%;
+   margin : 0 10px 0;
+  }
   .services-container h2 {
    font-size: 1.5rem;
   }
@@ -854,6 +863,7 @@ form .btn {
    display: grid;
    grid-template-columns: repeat(2,minmax(100px,200px));
    grid-gap: 20px;
+   align-items: space-between;
   }
   .services-list div{
    padding : 20px;
