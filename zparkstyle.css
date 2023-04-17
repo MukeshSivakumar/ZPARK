@@ -53,14 +53,14 @@ nav {
    position : fixed;
    z-index : 1;
    width : 100%;
-   padding : 20px 20px 20px 40px;
+   padding : 20px 20px 20px 30px;
    background-color: var(--white);
-   padding-top: 20px;
+   /* padding-top: 20px; */
    display : flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
-   border-bottom : 1px solid grey;
+   border-bottom : 1px solid var(--grey_bg);
 }
 
 nav ul {
@@ -86,11 +86,11 @@ nav ul li {
 
 nav ul li a{
    text-decoration: none;
-   color : rgba(255,255,255,0.7);;
+   color : rgba(255,255,255,0.7);
    font-size : 1rem;
-   font-weight: bold;
+   font-weight:bolder;
    position: relative;
-   color : var(--grey_bg);
+   color : var(--darklavender);
 }
 
 nav ul li a::after {
@@ -112,7 +112,8 @@ nav ul li a:hover::after {
 }
 
 .textColor {
-   color: linear-gradient(to right,#c31432,#240b36);
+   /* color: linear-gradient(to right,#c31432,#240b36); */
+   color : whitesmoke;
    font-size: 2.5rem;
 }
 
@@ -150,7 +151,7 @@ nav ul li a:hover::after {
    width : fit-content;
    height : 60px;
    padding : 10px 30px;
-   border-radius: 30px;
+   border-radius: 10px;
    font-size : 20px;
    font-weight: bold;
    cursor: pointer;
@@ -167,12 +168,12 @@ nav ul li a:hover::after {
 .main-img {
    background-image: url(IMAGES/customer2.jpg);
    background-size: 300px;
-   background-position: fit;
+   background-position: fit ;
    
    /* background-repeat: no-repeat; */
    /* background-color: rgb(44, 43, 43); */
    /* background-color: var(--grey_bg); */
-   background-repeat: space;
+   background-repeat: no-repeat;
    width : 380px;
    min-width : 300px;
    height : 450px;
@@ -677,41 +678,74 @@ form .btn {
    }
 
    .container {
-       /* width : 100%; */
-       background: url(IMAGES/mobile\ BG\ main.PNG);
-       background-size: 400px;
-       background-position: center;
-       background-repeat: no-repeat;
-       padding-left: 20px;
-       padding-top: 20px;
+       width : 100%;
+       /* background: url(IMAGES/customer2.jpg); */
+       /* background-size: 100px; */
+       /* background-position: center;
+       background-repeat: no-repeat; */
+       /* padding-left: 20px; */
+       /* padding-top: 20px; */
        /* height : 100vh; */
    }
    .main {
-       width: 80%;
+       width: 100%;
+       display : flex;
+       flex-direction: column;
+       /* justify-content: space-around; */
    }
    .main-img {
-       display: none;
-       width : 0;
-       height : 0;
+       /* display: none; */
+       flex : 4;
+       background-image: url(IMAGES/customer2.jpg);
+       background-position: top;
+       background-size: 300px;
+       width : 300px;
+       min-width: 300px;
+       min-height :400px;
+       border-radius: 20px;
+       margin: 0 auto 20px;
+      
    }
    .main-content {
-       margin : 330px 0 0 0;
-       padding-left: 30px;
+       flex : 1;
+       margin :100px 0 0 0;
+       padding : 15px;
    }
    .main-content h1 {
-       font-size: 20px;
-       line-height: 30px;
+       font-size: 1rem;
+       line-height: 1em;
    }
-   .main-content h4 {
-       font-size: 10px;
+   .main-content .home-content{
+       font-size: 1rem;
        margin-bottom: 0;
-       padding : 40px 0 0 0 ;
-       position: relative;
-       top : 20px;
+       /* padding : 10px 0 0 0 ; */
+       /* position: relative;
+       top : 20px; */
 
    }
    .textColor {
        padding-left: 0;
+       font-size : 20px
+   }
+
+   .btn {
+      font-size: 15px;
+      width : fit-content ;
+      height : 45px ;
+      padding : 10px;
+      display : flex ;
+      margin: 30px auto;
+      text-decoration: none;
+   }
+
+   .main-content a {
+      text-decoration: none ;
+   }
+
+
+
+   nav {
+      padding : 10px;
    }
    
    nav .menu-icon{
@@ -719,7 +753,7 @@ form .btn {
    }
 
    nav ul {
-       background: var(--pink);
+       background: var(--white);
        position: fixed;
        top : 0;
        right : 0;
@@ -738,9 +772,12 @@ form .btn {
 
    nav ul li a{
        font-size: 20px;
-       color: var(--white);
+       color: var(--darklavender);
    }
 
+   nav h1 a{
+      font-size: 30px;
+   }
    .close-icon {
        position: absolute;
        top : 0;
@@ -748,9 +785,9 @@ form .btn {
        padding : 25px;
    }
 
-   .menu-icon {
+   /* .menu-icon {
        padding-right: 20px;
-   }
+   }  */
    
   /* -----------------------about--------------- */
 
